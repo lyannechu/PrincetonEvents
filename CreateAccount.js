@@ -38,10 +38,7 @@ export default class CreateAccountScreen extends Component {
       console.log("Passwords did not match.")
     }
 
-    /*firebaseApp.auth().createUserWithEmailAndPassword(this.state.email, this.state.password).catch(function(error){
-      console.log(error.code);
-      console.log(error.message);
-    })*/
+    this.props.navigation.navigate('Home');
 
   }
 
